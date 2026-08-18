@@ -1,4 +1,4 @@
-# 🟢 Matrix New Tab: Calendar & Task Manager
+#  Matrix New Tab: Calendar & Task Manager
 
 A lightweight, minimalist, and ultra-fast Chrome Extension that turns your New Tab page into a personal daily dashboard inspired by the iconic Matrix aesthetic. 
 
