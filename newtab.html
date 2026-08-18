@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- BACKGROUND IMAGE LAYER -->
+  <div id="bg-layer"></div>
+  <!-- DATE / TIME -->
+  <header id="header">
+    <div id="datetime">
+      <span id="time"></span>
+      <span id="date"></span>
+    </div>
+  </header>
+
+  <!-- MAIN TWO-COLUMN LAYOUT -->
+  <main id="main">
+    <!-- LEFT: CALENDAR -->
+    <section id="col-left">
+      <div id="calendar-section">
+        <div id="cal-header">
+          <button id="cal-prev" title="Previous month">◀</button>
+          <span id="cal-title"></span>
+          <button id="cal-next" title="Next month">▶</button>
+        </div>
+        <div id="cal-grid">
+          <div class="cal-day-label">Mo</div>
+          <div class="cal-day-label">Tu</div>
+          <div class="cal-day-label">We</div>
+          <div class="cal-day-label">Th</div>
+          <div class="cal-day-label">Fr</div>
+          <div class="cal-day-label">Sa</div>
+          <div class="cal-day-label">Su</div>
+        </div>
+      </div>
+
+      <div id="upcoming-section">
+        <div class="section-label">UPCOMING</div>
+        <div id="upcoming-list"></div>
+      </div>
+    </section>
+
+    <!-- RIGHT: TASKS -->
+    <section id="col-right">
+      <div id="tasks-section">
+        <div class="section-label">TODAY</div>
+        <div id="tasks-list"></div>
+        <button id="add-task-btn" title="Add task">+ Add task</button>
+      </div>
+
+      <div id="week-section">
+        <div class="section-label">THIS WEEK</div>
+        <div id="week-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SHORTCUTS -->
+  <footer id="footer">
+    <div class="section-label">SHORTCUTS</div>
+    <div id="shortcuts-list"></div>
+  </footer>
+
+  <!-- MODAL OVERLAY -->
+  <div id="modal-overlay" class="hidden">
+    <div id="modal">
+      <div id="modal-title"></div>
+      <form id="modal-form">
+        <div id="modal-fields"></div>
+        <div id="modal-actions">
+          <button type="button" id="modal-delete" class="modal-btn danger hidden">Delete</button>
+          <div class="spacer"></div>
+          <button type="button" id="modal-cancel" class="modal-btn">Cancel</button>
+          <button type="submit" id="modal-save" class="modal-btn primary">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- DAY TASKS POPUP -->
+  <div id="day-popup-overlay" class="hidden">
+    <div id="day-popup">
+      <div id="day-popup-title"></div>
+      <div id="day-popup-tasks"></div>
+      <button type="button" id="day-popup-close" class="modal-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- BACKGROUND SETTINGS -->
+  <button id="bg-toggle" title="Background settings">🖼</button>
+  <div id="bg-panel" class="hidden">
+    <div class="bg-panel-title">BACKGROUND</div>
+    <div class="bg-field">
+      <label for="bg-file-input">Image</label>
+      <div class="bg-file-row">
+        <button type="button" id="bg-pick-btn">Choose</button>
+        <button type="button" id="bg-clear-btn" class="bg-clear">✕</button>
+      </div>
+      <input type="file" id="bg-file-input" accept="image/*" class="hidden">
+    </div>
+    <div class="bg-field">
+      <label for="bg-opacity">Opacity</label>
+      <input type="range" id="bg-opacity" min="0" max="100" value="20">
+    </div>
+    <div class="bg-field">
+      <label for="bg-mode">Blend</label>
+      <select id="bg-mode">
+        <option value="normal">Normal</option>
+        <option value="multiply">Multiply</option>
+        <option value="screen">Screen</option>
+        <option value="overlay">Overlay</option>
+        <option value="soft-light">Soft Light</option>
+        <option value="hard-light">Hard Light</option>
+        <option value="luminosity">Luminosity</option>
+        <option value="color">Color</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

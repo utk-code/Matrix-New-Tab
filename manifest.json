@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Matrix Dashboard",
+  "version": "1.0.0",
+  "description": "A minimal Matrix-inspired new tab dashboard with calendar, tasks, and shortcuts.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
