@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Matrix Dashboard",
+  "name": "Matrix New Tab: Calendar & Task Manager",
   "version": "1.0.0",
   "description": "A minimal Matrix-inspired new tab dashboard with calendar, tasks, and shortcuts.",
   "chrome_url_overrides": {

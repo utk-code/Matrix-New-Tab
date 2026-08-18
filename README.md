@@ -1,4 +1,4 @@
-# 🟢 Matrix Dashboard — Chrome New Tab Extension
+# 🟢 Matrix New Tab: Calendar & Task Manager
 
 A lightweight, minimalist, and ultra-fast Chrome Extension that turns your New Tab page into a personal daily dashboard inspired by the iconic Matrix aesthetic. 
 
@@ -7,6 +7,8 @@ Designed to fit perfectly within a single viewport without vertical scrolling, k
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-00FF66?style=flat-square&logo=googlechrome&logoColor=black)
 ![Vanilla JS](https://img.shields.io/badge/Dependencies-Zero-00FF66?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-00FF66?style=flat-square)
+
+![Matrix New Tab Preview](image.png)
 
 ---
 
@@ -51,6 +53,7 @@ Designed to fit perfectly within a single viewport without vertical scrolling, k
 ├── newtab.html     # Main HTML structure
 ├── style.css       # Matrix theme styling & responsive adjustments
 ├── app.js          # Core logic (Calendar, Tasks, Storage & BG controls)
+├── image.png       # Dashboard screenshot preview
 └── icons/          # Extension icons (16px, 48px, 128px)
 ```
 
